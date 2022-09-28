@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>CPQ - custom swagger</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    
+    </head>
+    <body>
+        <h1 style="text-align: center;">Atualiazar função</h1>
+        <form method="POST" action="/func/upd">
+        <input type="hidden" id="id" name="id" value="{{funcs.id}}">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Função: </td>
+                                <td><input type="text" name="func" id="func" value="{{funcs.func}}" required></td>
+                            </tr>
+                            <tr>
+                                <td>Plugin: </td>
+                                <td><input type="text" name="plug" id="plug" value="{{funcs.plug}}" required></td>
+                            </tr>
+                            <tr>
+                                <td>Entrada: </td>
+                                <td><input type="text" name="inp" id="inp" value="{{funcs.inp}}" required></td>
+                            </tr>
+                            <tr>
+                                <td>Saída: </td>
+                                <td><input type="text" name="outp" id="outp" value="{{funcs.outp}}"></td>
+                            </tr>
+                            <tr>
+                                <td>Descrição: </td>
+                                <td><input type="text" name="desc" id="desc" value="{{funcs.desc}}"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" value="Update"></td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </form>
+    </body>
+</html>
